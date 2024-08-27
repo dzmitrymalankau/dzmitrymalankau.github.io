@@ -1,6 +1,6 @@
 # About
 
-My name is Dzmitry, I build software, [architect](blog/Architecture.md) solutions lead teams to success.
+My name is Dzmitry, I build software, [architect](blog/Architecture.md) solutions and lead teams to success.
 
 # Resume
 
