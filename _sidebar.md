@@ -1,3 +1,5 @@
 * [Home](/)
 * [Architecture](/content/Architecture.md)
-	* [Distributed environment](/content/Distributed.md)
+	* [Caching](/content/Caching.md)
+	* [Fault Tolerance](/content/FaultTolerance.md)
+	* [Scalling Out](/content/ScallingOut.md)

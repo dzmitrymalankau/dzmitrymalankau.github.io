@@ -1,7 +1,7 @@
 # Architecture
 
-[Caching in a distributed environment](/content/Distributed?id=caching-in-a-distributed-environment)
+[Caching in a distributed environment](/content/Caching.md)
 
-[Fault Tolerance](/content/Distributed?id=fault-tolerance-in-distributed-systems)
+[Fault Tolerance](/content/FaultTolerance.md)
 
-[How to scale out a distributed application](/content/Distributed?id=strategies-for-scaling-out-an-application)
+[How to scale out a distributed application](/content/ScallingOut.md)
