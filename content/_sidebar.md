@@ -3,3 +3,4 @@
 	* [Caching](/content/Caching.md)
 	* [Fault Tolerance](/content/FaultTolerance.md)
 	* [Scalling Out](/content/ScallingOut.md)
+* [Code Snippets](/content/Code.md)
