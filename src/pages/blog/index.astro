@@ -3,8 +3,8 @@ import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
 import Header from '../../components/Header.astro';
-import HeroBlogSVG from '../../assets/hero-blog.svg';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
 
 const posts = (await getCollection('blog')).sort(
@@ -17,18 +17,6 @@ const posts = (await getCollection('blog')).sort(
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
-			.hero-blog {
-				width: 100%;
-				margin: 0 0 2rem 0;
-				padding: 0;
-			}
-			.hero-blog svg {
-				width: 100%;
-				height: auto;
-				display: block;
-				border-radius: 12px;
-				box-shadow: var(--box-shadow);
-			}
 			main {
 				width: 960px;
 			}
@@ -70,7 +58,12 @@ const posts = (await getCollection('blog')).sort(
 				color: rgb(var(--black));
 				line-height: 1;
 			}
-			ul li a:hover h4 {
+			.date {
+				margin: 0;
+				color: rgb(var(--gray));
+			}
+			ul li a:hover h4,
+			ul li a:hover .date {
 				color: rgb(var(--accent));
 			}
 			ul a:hover img {
@@ -96,9 +89,6 @@ const posts = (await getCollection('blog')).sort(
 	<body>
 		<Header />
 		<main>
-			<div class="hero-blog">
-				<HeroBlogSVG />
-			</div>
 			<section>
 				<ul>
 					{
@@ -109,6 +99,9 @@ const posts = (await getCollection('blog')).sort(
 										<Image width={720} height={360} src={post.data.heroImage} alt="" />
 									)}
 									<h4 class="title">{post.data.title}</h4>
+									<p class="date">
+										<FormattedDate date={post.data.pubDate} />
+									</p>
 								</a>
 							</li>
 						))
