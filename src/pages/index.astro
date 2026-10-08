@@ -126,12 +126,8 @@ const blog = (await getCollection('blog')).sort(
 			}
 			.blog-footer {
 				display: flex;
-				justify-content: space-between;
+				justify-content: flex-end;
 				align-items: center;
-			}
-			.blog-date {
-				font-size: 0.875rem;
-				color: #64748b;
 			}
 			.read-more {
 				color: #2563eb;
@@ -140,28 +136,6 @@ const blog = (await getCollection('blog')).sort(
 			}
 			.read-more:hover {
 				color: #1d4ed8;
-			}
-			.cta-section {
-				background-color: #2563eb;
-				color: white;
-				text-align: center;
-			}
-			.cta-section h2 {
-				font-size: 2.25rem;
-				font-weight: bold;
-				margin-bottom: 1.5rem;
-			}
-			.cta-section p {
-				font-size: 1.25rem;
-				margin-bottom: 2rem;
-				color: #bfdbfe;
-			}
-			.cta-section a {
-				color: #dbeafe;
-				text-decoration: underline;
-			}
-			.cta-section a:hover {
-				color: #f0f9ff;
 			}
 		</style>
 	</head>
@@ -213,7 +187,7 @@ const blog = (await getCollection('blog')).sort(
 									<h3>{post.data.title}</h3>
 									<p>{post.data.description}</p>
 									<div class="blog-footer">
-										<span class="blog-date">{post.data.pubDate.toLocaleDateString()}</span>
+
 										<span class="read-more">Read →</span>
 									</div>
 								</a>
@@ -222,14 +196,6 @@ const blog = (await getCollection('blog')).sort(
 					</div>
 				</section>
 			)}
-
-			<!-- CTA Section -->
-			<section class="section cta-section">
-				<div class="content-wrapper">
-					<h2>Stay Updated</h2>
-					<p>Subscribe to our documentation for the latest insights on modern IT architecture and best practices</p>
-				</div>
-			</section>
 		</main>
 		<Footer />
 	</body>
