@@ -4,6 +4,7 @@ import { getCollection } from 'astro:content';
 import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
 import Header from '../../components/Header.astro';
+import HeroBlogSVG from '../../assets/hero-blog.svg';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
 
 const posts = (await getCollection('blog')).sort(
@@ -16,6 +17,18 @@ const posts = (await getCollection('blog')).sort(
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
+			.hero-blog {
+				width: 100%;
+				margin: 0 0 2rem 0;
+				padding: 0;
+			}
+			.hero-blog svg {
+				width: 100%;
+				height: auto;
+				display: block;
+				border-radius: 12px;
+				box-shadow: var(--box-shadow);
+			}
 			main {
 				width: 960px;
 			}
@@ -83,6 +96,9 @@ const posts = (await getCollection('blog')).sort(
 	<body>
 		<Header />
 		<main>
+			<div class="hero-blog">
+				<HeroBlogSVG />
+			</div>
 			<section>
 				<ul>
 					{

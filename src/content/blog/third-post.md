@@ -2,7 +2,7 @@
 title: 'Database Optimization for High-Traffic Applications'
 description: 'Strategies for maintaining database performance at scale'
 pubDate: 'Oct 15 2024'
-heroImage: '../../assets/blog-placeholder-2.jpg'
+heroImage: '../../assets/hero-database.svg'
 ---
 
 Database performance becomes increasingly critical as applications scale and traffic increases. Poorly optimized databases can become bottlenecks, limiting application scalability and user experience regardless of improvements elsewhere in the system.

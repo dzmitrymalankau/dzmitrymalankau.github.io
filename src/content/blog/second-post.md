@@ -2,7 +2,7 @@
 title: 'DevOps and Continuous Integration/Continuous Deployment'
 description: 'Implementing modern practices for rapid and reliable software delivery'
 pubDate: 'Oct 08 2024'
-heroImage: '../../assets/blog-placeholder-4.jpg'
+heroImage: '../../assets/hero-devops.svg'
 ---
 
 DevOps represents a cultural and technical shift that emphasizes collaboration between development and operations teams. Rather than siloed responsibilities, DevOps practices aim to create a continuous feedback loop throughout the software development lifecycle, from planning through deployment to production monitoring.

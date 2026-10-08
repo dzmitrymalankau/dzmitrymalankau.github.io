@@ -1,13 +1,31 @@
 ---
-import AboutHeroImage from '../assets/blog-placeholder-about.jpg';
+import HeroSVG from '../assets/hero-about.svg';
 import Layout from '../layouts/BlogPost.astro';
 ---
+
+<style>
+	.custom-hero {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.custom-hero svg {
+		width: 100%;
+		height: auto;
+		display: block;
+		border-radius: 12px;
+		box-shadow: var(--box-shadow);
+	}
+</style>
 
 <Layout
 	title="About Dzmitry"
 	description="Building scalable systems that work"
-	heroImage={AboutHeroImage}
+	heroImage={null}
 >
+	<div class="custom-hero">
+		<HeroSVG />
+	</div>
 	<p>
 	    I design and build systems that work and grow with business demands. I'm a consultant, leader, and business partner you can rely on - someone who can deliver.
 	</p>
@@ -15,7 +33,7 @@ import Layout from '../layouts/BlogPost.astro';
 
 
 	<p>
-	    This site is where I share what I learn about modern IT, businesses and life.
+	    This site is where I share what I learn about scalable systems, technology strategy, and business.
 	</p>
 	<p>
         Interested in building systems that scale or discussing ideas? Don't hesitate to reach out. Let's build something that works together.

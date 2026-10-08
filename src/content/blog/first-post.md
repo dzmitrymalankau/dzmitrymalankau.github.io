@@ -2,7 +2,7 @@
 title: 'Cloud-Native Architecture Best Practices'
 description: 'Key principles for building applications designed for cloud environments'
 pubDate: 'Oct 01 2024'
-heroImage: '../../assets/blog-placeholder-3.jpg'
+heroImage: '../../assets/hero-cloud-native.svg'
 ---
 
 Cloud-native architecture represents a fundamental shift in how organizations design and deploy applications. Rather than adapting traditional applications to cloud environments, cloud-native design starts with the cloud as a primary consideration, leveraging its capabilities for scalability, reliability, and operational efficiency.

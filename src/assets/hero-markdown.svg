@@ -1,0 +1,60 @@
+<svg viewBox="0 0 1020 510" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ec4899;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f43f5e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fb7185;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1020" height="510" fill="url(#grad1)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="100" cy="100" r="60" fill="white" opacity="0.1"/>
+  <circle cx="920" cy="400" r="80" fill="white" opacity="0.1"/>
+  
+  <!-- Document/page -->
+  <g transform="translate(300, 150)">
+    <rect x="0" y="0" width="200" height="280" fill="white" opacity="0.95" rx="8"/>
+    
+    <!-- Title -->
+    <text x="100" y="30" font-family="monospace" font-size="16" font-weight="bold" fill="#ec4899" text-anchor="middle"># Markdown</text>
+    
+    <!-- Bold text example -->
+    <rect x="20" y="50" width="160" height="20" fill="#fce7f3" rx="3"/>
+    <text x="30" y="65" font-family="monospace" font-size="12" fill="#be123c">**Bold Text**</text>
+    
+    <!-- Italic text example -->
+    <rect x="20" y="80" width="160" height="20" fill="#fce7f3" rx="3"/>
+    <text x="30" y="95" font-family="monospace" font-size="12" fill="#be123c" font-style="italic">*Italic Text*</text>
+    
+    <!-- Code block -->
+    <rect x="20" y="110" width="160" height="40" fill="#1f2937" rx="3"/>
+    <text x="30" y="128" font-family="monospace" font-size="10" fill="#10b981">const x = 42;</text>
+    <text x="30" y="142" font-family="monospace" font-size="10" fill="#10b981">console.log(x);</text>
+    
+    <!-- List items -->
+    <circle cx="30" cy="165" r="3" fill="#ec4899"/>
+    <text x="45" y="170" font-family="monospace" font-size="11" fill="#be123c">List item 1</text>
+    
+    <circle cx="30" cy="190" r="3" fill="#ec4899"/>
+    <text x="45" y="195" font-family="monospace" font-size="11" fill="#be123c">List item 2</text>
+    
+    <!-- Link -->
+    <text x="30" y="225" font-family="monospace" font-size="11" fill="#0ea5e9" text-decoration="underline">[Link text](url)</text>
+  </g>
+  
+  <!-- Formatting symbols -->
+  <g transform="translate(650, 200)" opacity="0.6" fill="white">
+    <text x="0" y="0" font-size="48" font-weight="bold">#</text>
+    <text x="60" y="0" font-size="48" font-weight="bold">**</text>
+    <text x="120" y="0" font-size="48" font-style="italic">*</text>
+    <text x="170" y="0" font-size="48">`</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="510" y="460" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white" opacity="0.95" text-anchor="middle">
+    Markdown Formatting Guide
+  </text>
+</svg>

@@ -1,0 +1,81 @@
+<svg viewBox="0 0 1020 510" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0891b2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0e7490;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#0e7490;stop-opacity:0.2" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1020" height="510" fill="url(#grad1)"/>
+  <rect width="1020" height="510" fill="url(#grad2)"/>
+  
+  <!-- Network nodes and connections -->
+  <g stroke="white" stroke-width="2" opacity="0.4">
+    <line x1="150" y1="120" x2="350" y2="180"/>
+    <line x1="350" y1="180" x2="550" y2="100"/>
+    <line x1="550" y1="100" x2="750" y2="200"/>
+    <line x1="350" y1="180" x2="450" y2="320"/>
+    <line x1="450" y1="320" x2="650" y2="290"/>
+    <line x1="750" y1="200" x2="650" y2="290"/>
+  </g>
+  
+  <!-- Container/microservice nodes -->
+  <g>
+    <!-- Service 1 -->
+    <rect x="120" y="100" width="60" height="60" fill="white" opacity="0.85" rx="4"/>
+    <circle cx="150" cy="130" r="12" fill="#06b6d4" opacity="0.7"/>
+    <text x="150" y="185" font-family="Arial" font-size="10" fill="white" text-anchor="middle" font-weight="bold">API</text>
+  </g>
+  
+  <g>
+    <!-- Service 2 -->
+    <rect x="320" y="160" width="60" height="60" fill="white" opacity="0.85" rx="4"/>
+    <circle cx="350" cy="190" r="12" fill="#06b6d4" opacity="0.7"/>
+    <text x="350" y="245" font-family="Arial" font-size="10" fill="white" text-anchor="middle" font-weight="bold">Auth</text>
+  </g>
+  
+  <g>
+    <!-- Service 3 -->
+    <rect x="520" y="80" width="60" height="60" fill="white" opacity="0.85" rx="4"/>
+    <circle cx="550" cy="110" r="12" fill="#06b6d4" opacity="0.7"/>
+    <text x="550" y="165" font-family="Arial" font-size="10" fill="white" text-anchor="middle" font-weight="bold">Core</text>
+  </g>
+  
+  <g>
+    <!-- Service 4 -->
+    <rect x="720" y="180" width="60" height="60" fill="white" opacity="0.85" rx="4"/>
+    <circle cx="750" cy="210" r="12" fill="#06b6d4" opacity="0.7"/>
+    <text x="750" y="265" font-family="Arial" font-size="10" fill="white" text-anchor="middle" font-weight="bold">DB</text>
+  </g>
+  
+  <g>
+    <!-- Service 5 -->
+    <rect x="420" y="300" width="60" height="60" fill="white" opacity="0.85" rx="4"/>
+    <circle cx="450" cy="330" r="12" fill="#06b6d4" opacity="0.7"/>
+    <text x="450" y="385" font-family="Arial" font-size="10" fill="white" text-anchor="middle" font-weight="bold">Cache</text>
+  </g>
+  
+  <g>
+    <!-- Service 6 -->
+    <rect x="620" y="270" width="60" height="60" fill="white" opacity="0.85" rx="4"/>
+    <circle cx="650" cy="300" r="12" fill="#06b6d4" opacity="0.7"/>
+    <text x="650" y="355" font-family="Arial" font-size="10" fill="white" text-anchor="middle" font-weight="bold">Queue</text>
+  </g>
+  
+  <!-- Scaling indicators -->
+  <g opacity="0.6" fill="white">
+    <text x="850" y="150" font-family="Arial" font-size="48" font-weight="bold">⟳</text>
+    <text x="850" y="200" font-family="Arial" font-size="12" text-anchor="middle">Auto-Scale</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="510" y="460" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white" opacity="0.95" text-anchor="middle">
+    Cloud-Native Architecture
+  </text>
+</svg>
