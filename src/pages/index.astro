@@ -148,32 +148,11 @@ const blog = (await getCollection('blog')).sort(
 				<div class="hero-content">
 					<h1>Scalable Systems & Business</h1>
 					<p>Explore best practices for building distributed systems, cloud-native architectures, and scalable applications in today's IT landscape.</p>
-					<a href="/docs/" class="cta-button">Explore Resources</a>
+				<a href="/blog/" class="cta-button">Read Articles</a>
 				</div>
 			</section>
 
 			<!-- Documentation Highlight -->
-			<section class="section section-bg">
-				<div class="content-wrapper">
-					<h2 class="section-title">Learn from Experience</h2>
-					<p>I share knowledge about building robust distributed systems, handling scale, and designing architectures that can grow with your business.</p>
-					<div class="doc-cards">
-						<a href="/docs/architecture/" class="doc-card">
-							<h3>Architecture</h3>
-							<p>Distributed systems design patterns and principles</p>
-						</a>
-						<a href="/docs/fault-tolerance/" class="doc-card">
-							<h3>Fault Tolerance</h3>
-							<p>Building resilient systems that handle failures gracefully</p>
-						</a>
-						<a href="/docs/scaling-out/" class="doc-card">
-							<h3>Scaling Strategies</h3>
-							<p>Patterns for scaling applications to handle growth</p>
-						</a>
-					</div>
-				</div>
-			</section>
-
 			<!-- Recent Blog Posts -->
 			{blog.length > 0 && (
 				<section class="section">
@@ -181,7 +160,7 @@ const blog = (await getCollection('blog')).sort(
 						<h2 class="section-title">Recent Articles</h2>
 						<div class="blog-grid">
 							{blog.map((post) => (
-								<a href={`/blog/${post.slug}/`} class="blog-card">
+								<a href={`/blog/${post.id}/`} class="blog-card">
 									{post.data.heroImage && (
 										<Image width={400} height={200} src={post.data.heroImage} alt={post.data.title} style="width: 100%; height: 12rem; object-fit: cover; border-radius: 0.25rem; margin-bottom: 1rem;" />
 									)}
