@@ -1,0 +1,68 @@
+<svg viewBox="0 0 1020 510" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="codeGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1"></stop>
+      <stop offset="50%" style="stop-color:#0099ff;stop-opacity:1"></stop>
+      <stop offset="100%" style="stop-color:#006fff;stop-opacity:1"></stop>
+    </linearGradient>
+    <linearGradient id="codeGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:0.2"></stop>
+      <stop offset="100%" style="stop-color:#006fff;stop-opacity:0.2"></stop>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1020" height="510" fill="url(#codeGrad1)"></rect>
+  <rect width="1020" height="510" fill="url(#codeGrad2)"></rect>
+  
+  <!-- Code editor window -->
+  <g transform="translate(510, 255)">
+    <!-- Window frame -->
+    <rect x="-200" y="-150" width="400" height="300" fill="#1a1a2e" rx="10"></rect>
+    
+    <!-- Title bar -->
+    <rect x="-200" y="-150" width="400" height="35" fill="#16213e" rx="10 10 0 0"></rect>
+    <circle cx="-180" cy="-132" r="5" fill="#ff6b6b"></circle>
+    <circle cx="-160" cy="-132" r="5" fill="#ffd93d"></circle>
+    <circle cx="-140" cy="-132" r="5" fill="#6bcf7f"></circle>
+    <text x="-70" y="-120" font-family="monospace" font-size="12" fill="#e0e0e0">code.ts</text>
+    
+    <!-- Code lines -->
+    <g font-family="monospace" font-size="14" fill="#e0e0e0">
+      <!-- Line 1 -->
+      <text x="-185" y="-100" fill="#00d4ff">function</text>
+      <text x="-85" y="-100" fill="#e0e0e0">fibonacci(n: </text>
+      <text x="55" y="-100" fill="#ffd93d">number</text>
+      <text x="135" y="-100" fill="#e0e0e0">) {</text>
+      
+      <!-- Line 2 -->
+      <text x="-185" y="-75" fill="#00d4ff">if</text>
+      <text x="-160" y="-75" fill="#e0e0e0">(n &lt;= 1) </text>
+      <text x="-30" y="-75" fill="#00d4ff">return</text>
+      <text x="40" y="-75" fill="#6bcf7f">n</text>
+      <text x="55" y="-75" fill="#e0e0e0">;</text>
+      
+      <!-- Line 3 -->
+      <text x="-185" y="-50" fill="#00d4ff">return</text>
+      <text x="-100" y="-50" fill="#e0e0e0">fibonacci(n-1) + fibonacci(n-2);</text>
+      
+      <!-- Line 4 -->
+      <text x="-185" y="-25" fill="#e0e0e0">}</text>
+    </g>
+    
+    <!-- Floating code symbols -->
+    <g opacity="0.3" fill="#00d4ff">
+      <text x="-300" y="-80" font-size="40" font-family="monospace">&lt;</text>
+      <text x="220" y="40" font-size="40" font-family="monospace">/&gt;</text>
+      <text x="-320" y="100" font-size="40" font-family="monospace">{ }</text>
+    </g>
+  </g>
+  
+  <!-- Decorative dots -->
+  <g opacity="0.15" fill="white">
+    <circle cx="100" cy="80" r="8"></circle>
+    <circle cx="920" cy="120" r="8"></circle>
+    <circle cx="150" cy="430" r="8"></circle>
+    <circle cx="880" cy="400" r="8"></circle>
+  </g>
+</svg>

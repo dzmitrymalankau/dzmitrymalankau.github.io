@@ -1,0 +1,41 @@
+<svg viewBox="0 0 1020 510" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="scaleGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1dd1a1;stop-opacity:1"></stop>
+      <stop offset="100%" style="stop-color:#00b894;stop-opacity:1"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="1020" height="510" fill="url(#scaleGrad1)"></rect>
+  
+  <!-- Load Balancer -->
+  <circle cx="200" cy="150" r="50" fill="white" opacity="0.9"></circle>
+  <text x="200" y="160" font-size="18" fill="#00b894" text-anchor="middle" font-weight="bold">LB</text>
+  
+  <!-- Instances -->
+  <rect x="400" y="80" width="100" height="80" fill="white" opacity="0.85" rx="8"></rect>
+  <text x="450" y="135" font-size="14" fill="#00b894" text-anchor="middle" font-weight="bold">Server 1</text>
+  
+  <rect x="550" y="80" width="100" height="80" fill="white" opacity="0.85" rx="8"></rect>
+  <text x="600" y="135" font-size="14" fill="#00b894" text-anchor="middle" font-weight="bold">Server 2</text>
+  
+  <rect x="700" y="80" width="100" height="80" fill="white" opacity="0.8" rx="8"></rect>
+  <text x="750" y="135" font-size="14" fill="#00b894" text-anchor="middle" font-weight="bold">Server 3</text>
+  
+  <!-- Connection lines -->
+  <line x1="250" y1="150" x2="400" y2="120" stroke="white" stroke-width="2" opacity="0.6"></line>
+  <line x1="250" y1="150" x2="550" y2="120" stroke="white" stroke-width="2" opacity="0.6"></line>
+  <line x1="250" y1="160" x2="700" y2="120" stroke="white" stroke-width="2" opacity="0.4"></line>
+  
+  <!-- Incoming traffic -->
+  <circle cx="80" cy="150" r="8" fill="white" opacity="0.7"></circle>
+  <line x1="88" y1="150" x2="150" y2="150" stroke="white" stroke-width="2" opacity="0.7"></line>
+  
+  <!-- Distribution labels -->
+  <text x="450" y="200" font-size="12" fill="white" text-anchor="middle">33%</text>
+  <text x="600" y="200" font-size="12" fill="white" text-anchor="middle">33%</text>
+  <text x="750" y="200" font-size="12" fill="white" text-anchor="middle">34%</text>
+  
+  <!-- Scaling indicator -->
+  <text x="500" y="400" font-size="20" fill="white" text-anchor="middle" font-weight="bold">Horizontal Scaling</text>
+  <path d="M 400 420 L 450 400 L 500 410 L 550 380 L 600 390" stroke="white" stroke-width="2" fill="none" opacity="0.6"></path>
+</svg>

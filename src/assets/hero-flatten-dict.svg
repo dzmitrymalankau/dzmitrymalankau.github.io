@@ -1,0 +1,46 @@
+<svg viewBox="0 0 1020 510" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="flatGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d946ef;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1020" height="510" fill="url(#flatGrad1)"/>
+  
+  <!-- Nested structure (left side) -->
+  <g transform="translate(200, 150)">
+    <rect x="0" y="0" width="140" height="80" fill="white" opacity="0.9" rx="6"/>
+    <text x="70" y="35" font-size="14" fill="#d946ef" text-anchor="middle" font-weight="bold">root</text>
+    
+    <rect x="20" y="100" width="110" height="60" fill="white" opacity="0.8" rx="5"/>
+    <text x="75" y="135" font-size="12" fill="#d946ef" text-anchor="middle">config</text>
+    
+    <rect x="20" y="180" width="110" height="60" fill="white" opacity="0.75" rx="5"/>
+    <text x="75" y="215" font-size="12" fill="#d946ef" text-anchor="middle">database</text>
+    
+    <line x1="70" y1="80" x2="75" y2="100" stroke="white" stroke-width="2" opacity="0.7"/>
+    <line x1="70" y1="80" x2="75" y2="180" stroke="white" stroke-width="2" opacity="0.7"/>
+  </g>
+  
+  <!-- Arrow -->
+  <path d="M 420 200 L 480 200" stroke="white" stroke-width="3" opacity="0.7" fill="none"/>
+  <polygon points="490,200 475,195 475,205" fill="white" opacity="0.7"/>
+  <text x="450" y="180" font-size="12" fill="white" text-anchor="middle">Flatten</text>
+  
+  <!-- Flattened structure (right side) -->
+  <g transform="translate(550, 150)">
+    <rect x="0" y="0" width="180" height="50" fill="white" opacity="0.9" rx="6"/>
+    <text x="90" y="30" font-size="12" fill="#d946ef" text-anchor="middle" font-weight="bold">root.config</text>
+    
+    <rect x="0" y="80" width="180" height="50" fill="white" opacity="0.9" rx="6"/>
+    <text x="90" y="110" font-size="12" fill="#d946ef" text-anchor="middle" font-weight="bold">root.config.database</text>
+    
+    <rect x="0" y="160" width="180" height="50" fill="white" opacity="0.9" rx="6"/>
+    <text x="90" y="190" font-size="12" fill="#d946ef" text-anchor="middle" font-weight="bold">root.database</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="510" y="420" font-size="18" fill="white" text-anchor="middle" font-weight="bold">Dictionary Flattening</text>
+</svg>
