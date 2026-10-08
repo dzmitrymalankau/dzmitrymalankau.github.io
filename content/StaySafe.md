@@ -1,17 +1,28 @@
-## How to stay safe
+## Staying Safe: A Guide for Everyone
+
+A comprehensive safety guide covering physical, social, digital, and emergency scenarios.
 
 The world is mostly a wonderful place full of good people with good intentions. But predators do exist, and they look for a victim. That's why it helps to know some common tactics they use - so you can protect yourself.
 
-Outside
-Don't pick up other people's belongings - these could be stolen items, weapons, explosives, or drugs.
+---
 
-Don't pick up wallets. Scammers often claim there was money in the wallet.
+## 📚 Complete Guide Sections
 
-Don't pass on other people's belongings. If someone asks you to hand something over or hold it (even a package), it may contain prohibited items - and you could be held responsible.
+### 🚗 [Outside Safety](outside-safety.md)
+Staying safe in public spaces and physical environments
 
-Don't stand nearby if someone is committing an illegal act (stealing, breaking things, assault). Being there can make you an accomplice.
+### 👥 [Social Safety](social-safety.md)
+Navigating relationships and social situations
 
-Don't break or vandalize things - this is property damage and can be a criminal offense.
+### 💻 [Online Safety](online-safety.md)
+Protecting yourself in digital spaces
+
+### 🚨 [Emergency Response & Legal Awareness](emergency-response.md)
+What to do when things go wrong
+
+---
+
+**Start with any section that matters most to you, or read through all of them to build comprehensive safety awareness.**
 
 Don't enter abandoned buildings - they may have an owner, which can count as trespassing.
 
