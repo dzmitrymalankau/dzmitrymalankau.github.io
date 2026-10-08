@@ -72,7 +72,10 @@ const docs = await getCollection('docs');
 			<section class="docs-container">
 				<div class="docs-grid">
 					{docs.map((doc) => {
-						const slug = doc.id.replace(/\.md$/, '').toLowerCase();
+						const slug = doc.id
+							.replace(/\.md$/, '')
+							.replace(/([a-z])([A-Z])/g, '$1-$2')
+							.toLowerCase();
 						return (
 							<a href={`/docs/${slug}/`} class="doc-card">
 								<h3>{doc.data.title}</h3>

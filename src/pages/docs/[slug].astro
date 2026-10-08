@@ -7,7 +7,10 @@ import Header from '../../components/Header.astro';
 export async function getStaticPaths() {
 	const docs = await getCollection('docs');
 	return docs.map((entry) => {
-		const slug = entry.id.replace(/\.md$/, '').toLowerCase();
+		const slug = entry.id
+			.replace(/\.md$/, '')
+			.replace(/([a-z])([A-Z])/g, '$1-$2')
+			.toLowerCase();
 		return {
 			params: { slug },
 			props: entry,
