@@ -1,0 +1,203 @@
+---
+import { Image } from 'astro:assets';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import { getCollection } from 'astro:content';
+
+const blog = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+).slice(0, 3);
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			.hero {
+				background: linear-gradient(to bottom right, #1e293b, #0f172a);
+				color: white;
+				padding: 5rem 1.5rem;
+			}
+			.hero-content {
+				max-width: 56rem;
+				margin: 0 auto;
+			}
+			.hero h1 {
+				font-size: 3rem;
+				font-weight: bold;
+				margin-bottom: 1.5rem;
+				line-height: 1.2;
+			}
+			.hero p {
+				font-size: 1.25rem;
+				color: #cbd5e1;
+				margin-bottom: 2rem;
+				line-height: 1.6;
+			}
+			.cta-button {
+				display: inline-block;
+				background-color: #2563eb;
+				color: white;
+				font-weight: 600;
+				padding: 0.75rem 2rem;
+				border-radius: 0.5rem;
+				text-decoration: none;
+				transition: background-color 0.2s;
+			}
+			.cta-button:hover {
+				background-color: #1d4ed8;
+			}
+			.section {
+				padding: 4rem 1.5rem;
+			}
+			.section-bg {
+				background-color: #f1f5f9;
+			}
+			.section-title {
+				font-size: 2.25rem;
+				font-weight: bold;
+				margin-bottom: 3rem;
+				color: #0f172a;
+			}
+			.content-wrapper {
+				max-width: 56rem;
+				margin: 0 auto;
+			}
+			.content-wrapper > p {
+				font-size: 1.125rem;
+				color: #475569;
+				margin-bottom: 2rem;
+				line-height: 1.6;
+			}
+			.doc-cards {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+				gap: 1.5rem;
+			}
+			.doc-card {
+				display: block;
+				padding: 1.5rem;
+				background-color: white;
+				border-radius: 0.5rem;
+				box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+				text-decoration: none;
+				transition: box-shadow 0.2s;
+			}
+			.doc-card:hover {
+				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			}
+			.doc-card h3 {
+				font-size: 1.25rem;
+				font-weight: 600;
+				margin-bottom: 0.5rem;
+				color: #0f172a;
+			}
+			.doc-card p {
+				color: #475569;
+			}
+			.blog-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+				gap: 1.5rem;
+			}
+			.blog-card {
+				display: block;
+				background-color: white;
+				border-radius: 0.5rem;
+				box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+				padding: 1.5rem;
+				text-decoration: none;
+				transition: box-shadow 0.2s;
+			}
+			.blog-card:hover {
+				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			}
+			.blog-card h3 {
+				font-size: 1.25rem;
+				font-weight: 600;
+				margin-bottom: 0.75rem;
+				color: #0f172a;
+			}
+			.blog-card p {
+				color: #475569;
+				margin-bottom: 1rem;
+			}
+			.blog-footer {
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+			}
+			.read-more {
+				color: #2563eb;
+				font-weight: 600;
+				text-decoration: none;
+			}
+			.read-more:hover {
+				color: #1d4ed8;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<!-- Hero Section -->
+			<section class="hero">
+				<div class="hero-content">
+					<h1>Scalable Systems & Business</h1>
+					<p>Explore best practices for building distributed systems, cloud-native architectures, and scalable applications in today's IT landscape.</p>
+					<a href="/docs/" class="cta-button">Explore Resources</a>
+				</div>
+			</section>
+
+			<!-- Documentation Highlight -->
+			<section class="section section-bg">
+				<div class="content-wrapper">
+					<h2 class="section-title">Learn from Experience</h2>
+					<p>I share knowledge about building robust distributed systems, handling scale, and designing architectures that can grow with your business.</p>
+					<div class="doc-cards">
+						<a href="/docs/architecture/" class="doc-card">
+							<h3>Architecture</h3>
+							<p>Distributed systems design patterns and principles</p>
+						</a>
+						<a href="/docs/fault-tolerance/" class="doc-card">
+							<h3>Fault Tolerance</h3>
+							<p>Building resilient systems that handle failures gracefully</p>
+						</a>
+						<a href="/docs/scaling-out/" class="doc-card">
+							<h3>Scaling Strategies</h3>
+							<p>Patterns for scaling applications to handle growth</p>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Recent Blog Posts -->
+			{blog.length > 0 && (
+				<section class="section">
+					<div class="content-wrapper">
+						<h2 class="section-title">Recent Articles</h2>
+						<div class="blog-grid">
+							{blog.map((post) => (
+								<a href={`/blog/${post.slug}/`} class="blog-card">
+									{post.data.heroImage && (
+										<Image width={400} height={200} src={post.data.heroImage} alt={post.data.title} style="width: 100%; height: 12rem; object-fit: cover; border-radius: 0.25rem; margin-bottom: 1rem;" />
+									)}
+									<h3>{post.data.title}</h3>
+									<p>{post.data.description}</p>
+									<div class="blog-footer">
+
+										<span class="read-more">Read →</span>
+									</div>
+								</a>
+							))}
+						</div>
+					</div>
+				</section>
+			)}
+		</main>
+		<Footer />
+	</body>
+</html>
