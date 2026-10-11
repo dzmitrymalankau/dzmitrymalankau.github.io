@@ -56,4 +56,4 @@ Social media is a public space: calls, likes, sharing extremist content, and fak
 
 ---
 
-**Part of the [Staying Safe: A Guide for Everyone](/blog/staying-safe-guide/) series**
+**Part of the [Staying Safe: A Guide for Everyone](/guides/staying-safe-guide/) series**

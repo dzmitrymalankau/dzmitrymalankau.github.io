@@ -1,8 +1,8 @@
 ---
 title: 'Staying Safe: A Guide for Everyone'
 description: 'A comprehensive safety guide covering physical, social, digital, and emergency scenarios'
-pubDate: 'Oct 08 2024'
-heroImage: '../../assets/safety-illustrations/hero-police.svg'
+pubDate: 2024-10-08
+heroImage: '../../assets/safety-illustrations/hero-safety.svg'
 ---
 
 A comprehensive safety guide covering physical, social, digital, and emergency scenarios.
@@ -27,16 +27,16 @@ Choose how to navigate based on your needs:
 ## 📚 Complete Guide Sections
 
 ### 🚗 [Outside Safety](/guides/outside-safety/)
-Staying safe in public spaces and physical environments
+Staying safe in public spaces and physical environments. Learn how to trust your instincts, recognize dangerous situations, avoid common scams and traps, understand your legal responsibilities, and handle aggressive encounters with confidence.
 
 ### 👥 [Social Safety](/guides/social-safety/)
-Navigating relationships and social situations
+Navigating relationships and social situations safely. Covers recognizing red flags in people, setting healthy boundaries, understanding peer pressure and dares, healthy relationship dynamics, and trusting your gut about who to let into your life.
 
 ### 💻 [Online Safety](/guides/online-safety/)
-Protecting yourself in digital spaces
+Protecting yourself in digital spaces. Master password security, two-factor authentication, phishing detection, avoiding malware and scams, verifying online identities, and understanding social media risks and platform safety settings.
 
 ### 🚨 [Emergency Response & Legal Awareness](/guides/emergency-response/)
-What to do when things go wrong
+What to do when things go wrong and understanding legal consequences. Know your rights with police, how to handle emergencies calmly, recognizing traps and red flags, understanding age of consent laws, and learning consequences of illegal activities before you need the knowledge.
 
 ---
 

@@ -54,13 +54,13 @@ const blog = (await getCollection('blog')).sort(
 				padding: 4rem 1.5rem;
 			}
 			.section-bg {
-				background-color: #f1f5f9;
+				background-color: var(--bg-color);
 			}
 			.section-title {
 				font-size: 2.25rem;
 				font-weight: bold;
 				margin-bottom: 3rem;
-				color: #0f172a;
+				color: rgb(var(--black));
 			}
 			.content-wrapper {
 				max-width: 56rem;
@@ -68,7 +68,7 @@ const blog = (await getCollection('blog')).sort(
 			}
 			.content-wrapper > p {
 				font-size: 1.125rem;
-				color: #475569;
+				color: var(--text-color);
 				margin-bottom: 2rem;
 				line-height: 1.6;
 			}
@@ -80,7 +80,7 @@ const blog = (await getCollection('blog')).sort(
 			.doc-card {
 				display: block;
 				padding: 1.5rem;
-				background-color: white;
+				background-color: var(--bg-color);
 				border-radius: 0.5rem;
 				box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 				text-decoration: none;
@@ -93,10 +93,10 @@ const blog = (await getCollection('blog')).sort(
 				font-size: 1.25rem;
 				font-weight: 600;
 				margin-bottom: 0.5rem;
-				color: #0f172a;
+				color: rgb(var(--black));
 			}
 			.doc-card p {
-				color: #475569;
+				color: var(--text-color);
 			}
 			.blog-grid {
 				display: grid;
@@ -105,7 +105,7 @@ const blog = (await getCollection('blog')).sort(
 			}
 			.blog-card {
 				display: block;
-				background-color: white;
+				background-color: var(--bg-color);
 				border-radius: 0.5rem;
 				box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 				padding: 1.5rem;
@@ -119,10 +119,10 @@ const blog = (await getCollection('blog')).sort(
 				font-size: 1.25rem;
 				font-weight: 600;
 				margin-bottom: 0.75rem;
-				color: #0f172a;
+				color: rgb(var(--black));
 			}
 			.blog-card p {
-				color: #475569;
+				color: var(--text-color);
 				margin-bottom: 1rem;
 			}
 			.blog-footer {

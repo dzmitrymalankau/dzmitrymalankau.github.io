@@ -42,4 +42,4 @@ Drugs - you can't "try once and forget." They quickly lead to addiction and dama
 
 ---
 
-**Part of the [Staying Safe: A Guide for Everyone](/blog/staying-safe-guide/) series**
+**Part of the [Staying Safe: A Guide for Everyone](/guides/staying-safe-guide/) series**

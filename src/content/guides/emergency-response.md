@@ -60,4 +60,4 @@ Sex with someone under the legal age of consent in your state is punishable by l
 
 ---
 
-**Part of the [Staying Safe: A Guide for Everyone](/blog/staying-safe-guide/) series**
+**Part of the [Staying Safe: A Guide for Everyone](/guides/staying-safe-guide/) series**
