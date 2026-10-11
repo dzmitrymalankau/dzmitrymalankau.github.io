@@ -7,6 +7,11 @@ heroImage: '../../assets/safety-illustrations/hero-social.svg'
 
 Navigating relationships and social situations safely.
 
+> ⚠️ **Key Takeaways**
+> - Your boundaries and comfort level come first—always
+> - Healthy relationships don't involve pressure, manipulation, or isolation
+> - Recognize peer pressure tactics and give yourself permission to say no
+
 ## Dating & Romantic Safety
 
 You don't need a fancy restaurant to date someone. In fact, it's often better to live an active social life - go to events, meet people, and spend time together in public places. These days, romantic relationships can be exploited by someone trying to take advantage of you. If someone is trying to lure you to a bar or restaurant, treat it as a potential trap. Be cautious, and never feel bad about saying no.
@@ -24,6 +29,16 @@ In most countries, restaurants don't offer free refills. Ordering a Coke/water c
 ## Substance Awareness
 
 Drugs - you can't "try once and forget." They quickly lead to addiction and damage the natural systems that create pleasure and joy.
+
+---
+
+## Quick Reference Checklist
+
+- [ ] Trust your feelings about people—if someone gives you a bad feeling, listen to it
+- [ ] Keep friends and trusted adults informed about your social plans
+- [ ] Never let anyone pressure you into isolation from friends/family
+- [ ] Watch drinks/food at all times; don't accept drinks from strangers
+- [ ] Know it's always okay to say "no" and walk away
 
 ---
 

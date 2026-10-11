@@ -7,6 +7,11 @@ heroImage: '../../assets/safety-illustrations/hero-police.svg'
 
 Staying safe in public spaces and physical environments.
 
+> ⚠️ **Key Takeaways**
+> - Trust your instincts about people and situations
+> - Understand legal boundaries—what seems harmless can have serious consequences
+> - Know that most people are trustworthy; these tips help you spot the exceptions
+
 ## Physical Safety & Belongings
 
 Don't pick up other people's belongings - these could be stolen items, weapons, explosives, or drugs.
@@ -64,6 +69,16 @@ Sports betting and similar gambling are never a smart bet - never. It's a brain 
 ## Age of Consent & Exploitation
 
 Sex with someone under the legal age of consent in your state is punishable by law - even if they claim it's consensual or that they're older. Don't trust blindly; people can lie about their age.
+
+---
+
+## Quick Reference Checklist
+
+- [ ] Trust your gut—if a situation feels unsafe, remove yourself
+- [ ] Never accept items from strangers; verify ownership with trusted adults
+- [ ] Understand that you can be held responsible for items you carry or touch
+- [ ] Know your limits—don't risk your health/safety to impress anyone
+- [ ] Have emergency contact info memorized (not just in your phone)
 
 ---
 
