@@ -9,26 +9,44 @@ A structured roadmap for incrementally enhancing the "Staying Safe: A Guide for 
 
 ## Project Overview
 
-**Series Location**: `src/content/blog/`
-- `staying-safe-guide.md` (umbrella/TOC)
-- `outside-safety.md`
-- `social-safety.md`
-- `online-safety.md`
-- `emergency-response.md`
+**Series Location**: 
+- Umbrella: `src/content/blog/staying-safe-guide.md`
+- Sub-articles: `src/content/guides/` (NEW collection)
+  - `outside-safety.md`
+  - `social-safety.md`
+  - `online-safety.md`
+  - `emergency-response.md`
 
 **Goal**: Improve content clarity, tone, and actionability while preserving all original advice.
+
+**Structure Change**: Sub-articles moved to dedicated `guides` collection so only the umbrella article appears in the blog feed.
 
 ---
 
 ## Pending Changes (Currently Applied)
 
-### ✅ Completed Changes
+### ✅ Structural Changes (Complete)
+
+**Created guides collection**:
+- Added `guides` collection to `src/content.config.ts`
+- Created `src/content/guides/` folder with 4 sub-articles
+- Updated all links to point to `/guides/` URLs
+- Only `staying-safe-guide.md` appears in blog feed
+
+**Files moved to guides**:
+- ✅ outside-safety.md (with Key Takeaways + Quick Checklist)
+- ✅ social-safety.md (with Key Takeaways + Quick Checklist)
+- ⏸️ online-safety.md (needs Key Takeaways + Quick Checklist)
+- ⏸️ emergency-response.md (needs Key Takeaways + Quick Checklist)
+
+### ✅ Content Improvements Applied
 
 **staying-safe-guide.md**
 - Added "Why This Matters" section with empowerment framing
 - Added "How to Use This Guide" navigation section
 - Added "Quick Reference Checklist" (5 items)
 - Added "Need Help?" resources section with crisis numbers
+- Updated links to point to `/guides/` collection
 
 **outside-safety.md**
 - Added Key Takeaways box at introduction
@@ -232,14 +250,17 @@ Help users self-direct based on their needs.
 ## Execution Order
 
 ### ✅ Completed
+- [x] **STRUCTURAL**: Create guides collection (src/content.config.ts)
+- [x] **STRUCTURAL**: Move 4 sub-articles to src/content/guides/
+- [x] **STRUCTURAL**: Update links in umbrella article to /guides/
 - [x] Phase 1.1 - Add Key Takeaways (staying-safe-guide.md, outside-safety.md, social-safety.md)
 - [x] Phase 1.3 - Add Quick Reference Checklists (3 of 5 articles)
 - [x] Phase 2.1 - Empower opening (staying-safe-guide.md)
 - [x] Phase 2.3 - Resources (staying-safe-guide.md)
 - [x] Phase 4.3 - "How to Use This Guide" (staying-safe-guide.md)
 
-### ⏸️ Paused / Pending
-- [ ] Phase 1.1 - Add Key Takeaways to online-safety.md, emergency-response.md
+### ⏸️ Paused / Pending (Ready to Resume)
+- [ ] Phase 1.1 - Add Key Takeaways to online-safety.md, emergency-response.md **← RESUME HERE**
 - [ ] Phase 1.2 - Convert paragraphs to bullets (priority sections)
 - [ ] Phase 1.3 - Add Quick Checklists to remaining articles
 - [ ] Phase 2.1 - Empower openings (individual articles)
@@ -271,14 +292,21 @@ After each phase, verify:
 **Source Articles** (being updated):
 ```
 src/content/blog/
-├── staying-safe-guide.md
+└── staying-safe-guide.md (umbrella article only)
+
+src/content/guides/ (NEW collection)
 ├── outside-safety.md
 ├── social-safety.md
 ├── online-safety.md
 └── emergency-response.md
 ```
 
-**Reference Content** (preserved):
+**Configuration**:
+```
+src/content.config.ts (updated with guides collection)
+```
+
+**Reference Content** (deprecated):
 ```
 content/
 ├── StaySafe.md
@@ -286,6 +314,15 @@ content/
 ├── social-safety.md
 ├── online-safety.md
 └── emergency-response.md
+```
+
+**Old Blog Articles** (can be deleted):
+```
+src/content/blog/
+├── outside-safety.md (moved to guides)
+├── social-safety.md (moved to guides)
+├── online-safety.md (moved to guides)
+└── emergency-response.md (moved to guides)
 ```
 
 **This Plan**:
@@ -308,14 +345,19 @@ docs/SAFETY_GUIDE_IMPROVEMENTS.md
 
 ## Summary
 
-**Current Progress**: ~25% Complete
-- 3 of 5 articles have Key Takeaways + Checklists
-- Umbrella article fully enhanced with empowerment framing and resources
+**Current Progress**: ~30% Complete
+- ✅ Guides collection created and configured
+- ✅ 4 sub-articles moved to dedicated guides collection (clean blog feed)
+- ✅ 3 of 5 articles have Key Takeaways + Checklists
+- ✅ Umbrella article fully enhanced with empowerment framing and resources
+- ⏸️ 2 guide articles pending Key Takeaways + Checklists
 - 4 phases with 12 sub-tasks identified
 
-**Next Steps**:
-1. Complete Phase 1.1 (online-safety.md, emergency-response.md)
+**Next Immediate Steps**:
+1. **Resume Phase 1.1**: Add Key Takeaways + Checklists to online-safety.md, emergency-response.md (2 quick additions)
 2. Execute Phase 1.2 (paragraph-to-bullet conversions)
 3. Continue through Phase 2-4 as planned
 
-**Time Estimate**: 15-20 hours for full implementation
+**Time Estimate**: 12-15 hours remaining for full implementation
+
+**Note**: Old files in `src/content/blog/` (outside-safety.md, social-safety.md, online-safety.md, emergency-response.md) can be deleted once guides versions are verified.

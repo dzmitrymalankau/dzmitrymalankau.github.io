@@ -26,16 +26,16 @@ Choose how to navigate based on your needs:
 
 ## 📚 Complete Guide Sections
 
-### 🚗 [Outside Safety](/blog/outside-safety/)
+### 🚗 [Outside Safety](/guides/outside-safety/)
 Staying safe in public spaces and physical environments
 
-### 👥 [Social Safety](/blog/social-safety/)
+### 👥 [Social Safety](/guides/social-safety/)
 Navigating relationships and social situations
 
-### 💻 [Online Safety](/blog/online-safety/)
+### 💻 [Online Safety](/guides/online-safety/)
 Protecting yourself in digital spaces
 
-### 🚨 [Emergency Response & Legal Awareness](/blog/emergency-response/)
+### 🚨 [Emergency Response & Legal Awareness](/guides/emergency-response/)
 What to do when things go wrong
 
 ---

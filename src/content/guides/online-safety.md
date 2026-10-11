@@ -7,6 +7,11 @@ heroImage: '../../assets/safety-illustrations/hero-online.svg'
 
 Protecting yourself in digital spaces and preventing cyber attacks.
 
+> ⚠️ **Key Takeaways**
+> - Verify before trusting—online impersonation is easy
+> - Strong security (unique passwords, 2FA) is your best defense
+> - Most "free" software comes with hidden costs; trust is earned, not assumed
+
 ## Malware & Software Security
 
 Most "free" software (games, VPN apps, "antivirus") bundled with malware which can waste your computer's resources (e.g., cryptocurrency mining or joining botnets for coordinated attacks) and can also spy on you or steal data - personal emails/messages, bank accounts/money used online or monitor your online activity to blackmail you.
@@ -38,6 +43,16 @@ Turn on strong account security: use a unique password for each account and enab
 ## Social Media Awareness
 
 Social media is a public space: calls, likes, sharing extremist content, and fake/false information can be punishable.
+
+---
+
+## Quick Reference Checklist
+
+- [ ] Never share passwords, card details, or 2FA codes in chat—legitimate services won't ask
+- [ ] Verify sender identity before clicking links or opening attachments (check URL carefully)
+- [ ] Use unique, strong passwords for each account with 2FA enabled
+- [ ] Research before installing "free" software; check reviews and permissions
+- [ ] If phished, immediately change password and report/block the account
 
 ---
 

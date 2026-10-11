@@ -7,6 +7,11 @@ heroImage: '../../assets/safety-illustrations/hero-police.svg'
 
 What to do when things go wrong and understanding legal consequences.
 
+> ⚠️ **Key Takeaways**
+> - You have the right to remain silent—exercise it, especially with police
+> - Know your local laws before a crisis; research now, not in an emergency
+> - Most situations improve with calm, respectful behavior and trusted adult support
+
 ## Interacting with Police
 
 If the police stop you, don't run, don't insult, and don't be rude. Ask for a call, wait for your parents, and don't tell anything else or sign anything without your parents or a lawyer. Even if there is a pressure, resist to say anything - it could be used against you. You have a right to remain silent by law.
@@ -42,6 +47,16 @@ Don't agree to "easy money" (carry, deliver, place, remove from a card, hide). T
 Exchanging ("laundering") money for a percentage is participating in money laundering.
 
 Sex with someone under the legal age of consent in your state is punishable by law - even if they claim it's consensual or that they're older. Don't trust blindly; people can lie about their age.
+
+---
+
+## Quick Reference Checklist
+
+- [ ] Know your right to remain silent—practice it with police/authority figures
+- [ ] Keep a lawyer's or trusted adult's contact number memorized
+- [ ] If arrested: stay calm, ask for a lawyer/parent before answering questions
+- [ ] If threatened: record safely, ask person to leave, call security/police
+- [ ] Research your local laws now—know age of consent, cybercrime penalties, self-defense rules
 
 ---
 
