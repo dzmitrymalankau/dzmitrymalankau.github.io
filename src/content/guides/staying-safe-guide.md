@@ -2,6 +2,7 @@
 title: 'Staying Safe: A Guide for Everyone'
 description: 'A comprehensive safety guide covering physical, social, digital, and emergency scenarios'
 pubDate: 2024-10-08
+isUmbrella: true
 heroImage: '../../assets/safety-illustrations/hero-safety.svg'
 ---
 
@@ -37,6 +38,13 @@ Protecting yourself in digital spaces. Master password security, two-factor auth
 
 ### 🚨 [Emergency Response & Legal Awareness](/guides/emergency-response/)
 What to do when things go wrong and understanding legal consequences. Know your rights with police, how to handle emergencies calmly, recognizing traps and red flags, understanding age of consent laws, and learning consequences of illegal activities before you need the knowledge.
+
+---
+
+## Related Guides
+
+### 🛠️ [Sysadmin Toolkit: Essential Online Services (2026)](/guides/sysadmin-online-services/)
+An up-to-date operational guide for uptime checks, DNS and TLS validation, performance triage, and exposure monitoring with practical incident workflows.
 
 ---
 

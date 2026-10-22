@@ -7,7 +7,7 @@ import Header from '../../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
 
 const guides = (await getCollection('guides'))
-	.filter((article) => article.id === 'staying-safe-guide')
+	.filter((guide) => guide.data.isUmbrella === true)
 	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
