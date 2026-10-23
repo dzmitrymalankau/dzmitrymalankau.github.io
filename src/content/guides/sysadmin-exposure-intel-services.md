@@ -10,75 +10,41 @@ This section covers tools that help you understand what the internet can see abo
 ## Exposure Discovery
 
 ### <a href="https://www.shodan.io/" target="_blank" rel="noopener noreferrer">Shodan</a>
-Best for external attack surface inspection.
-
-Use when:
-- You want to find internet-exposed services and banners
-- You need to verify that intended ports are the only visible ones
-
-Caveat:
-- Use responsibly and within legal/organizational boundaries.
+Shodan is best used for external attack-surface inspection when you want to identify exposed services, review observed banners, and verify that only intended ports are visible from the public internet.
 
 ### <a href="https://securitytrails.com/" target="_blank" rel="noopener noreferrer">SecurityTrails</a>
-Best for historical DNS and asset relationship context.
-
-Use when:
-- You are investigating infrastructure drift or old exposure paths
-
-Caveat:
-- Free usage is limited; budget for deeper investigations.
+SecurityTrails is useful for historical DNS and asset-relationship context, especially when you are tracing infrastructure drift or mapping older exposure paths.
 
 ## IP And ASN Context
 
 ### <a href="https://ipinfo.io/" target="_blank" rel="noopener noreferrer">IPinfo</a>
-Best for fast IP ownership/ASN/geography context.
-
-Use when:
-- You are triaging suspicious traffic sources
-- You need quick enrichment in incident notes
+IPinfo provides fast ownership, ASN, and geography context for IP addresses, making it effective for triaging suspicious traffic and enriching incident notes quickly.
 
 ## Global Connectivity And Macro Signals
 
 ### <a href="https://radar.cloudflare.com/" target="_blank" rel="noopener noreferrer">Cloudflare Radar</a>
-Best for internet trend and outage context.
-
-Use when:
-- You need external macro signals during widespread incidents
-- You want to compare protocol/browser/traffic shifts over time
+Cloudflare Radar is effective for internet-trend and outage context when you need external macro signals during broad incidents or want to compare protocol, browser, and traffic shifts over time.
 
 ### <a href="https://radar.qrator.net/" target="_blank" rel="noopener noreferrer">radar.qrator.net</a>
-Best for an additional viewpoint on connectivity/AS relationships.
-
-Use when:
-- You need a second external perspective for route/connectivity assumptions
+radar.qrator.net adds a second external viewpoint on connectivity and AS relationships, which is valuable when validating routing assumptions.
 
 ## Threat Intel Adjacent Additions
 
 ### <a href="https://www.virustotal.com/" target="_blank" rel="noopener noreferrer">VirusTotal</a>
-Use when:
-- You need quick reputation checks for files, domains, IPs, or URLs
+VirusTotal is a practical option when you need quick reputation checks for files, domains, IPs, or URLs.
 
 ### <a href="https://eth0.me/" target="_blank" rel="noopener noreferrer">eth0.me</a> / <a href="https://ifconfig.me/" target="_blank" rel="noopener noreferrer">ifconfig.me</a> style endpoints
-Use when:
-- You need script-friendly external IP checks from hosts and CI jobs
+eth0.me and ifconfig.me style endpoints are useful for script-friendly external IP checks from servers, workstations, and CI jobs.
 
 ### <a href="https://digwebinterface.com/" target="_blank" rel="noopener noreferrer">digwebinterface.com</a>, <a href="https://ping.eu/" target="_blank" rel="noopener noreferrer">ping.eu</a>, <a href="https://ping.pe/" target="_blank" rel="noopener noreferrer">ping.pe</a>
-Use when:
-- You need browser-based DNS and ping/traceroute checks without local tooling
+digwebinterface.com, ping.eu, and ping.pe are helpful when you need browser-based DNS, ping, or traceroute checks without relying on local tooling.
 
 ## Operational Guardrails
 
-- Never rely on a single external data source for high-impact decisions.
-- Cross-check at least two services before escalating findings.
-- Preserve screenshots or exported evidence in incident records.
-- Re-validate "known good" assumptions after major provider or routing changes.
+For high-impact decisions, avoid relying on a single external source and cross-check findings with at least one additional service before escalation. Preserve screenshots or exported evidence in incident records, and re-validate "known good" assumptions after major provider, peering, or routing changes.
 
 ## Lightweight Weekly Routine
 
-1. Check exposure footprint for critical domains/IP ranges.
-2. Review newly observed certificates for key domains.
-3. Validate DNS/mail health for primary services.
-4. Spot-check one high-traffic endpoint performance from two regions.
-5. Update your runbook with any changed tool behavior or limits.
+Each week, review exposure footprint for critical domains and IP ranges, inspect newly observed certificates for key properties, and validate DNS and mail health for primary services. Add one spot-check of a high-traffic endpoint from two regions, then update the runbook with any tool behavior, visibility, or limit changes observed during the review.
 
 Back to the main guide: [Sysadmin Toolkit: Essential Online Services (2026)](/guides/sysadmin-online-services/).
